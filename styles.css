@@ -110,3 +110,32 @@ p {
   0% {transform: translateY(100vh) rotate(45deg);}
   100% {transform: translateY(-10vh) rotate(45deg);}
 }
+.btn {
+  margin-top: 15px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 25px;
+  background: #ff3f6c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 0, 90, 0.6);
+}
+
+.respuesta {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ff3f6c;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.respuesta.mostrar {
+  opacity: 1;
+}
